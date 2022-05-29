@@ -1,0 +1,82 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+div{
+    height: 29px;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    border: 1px solid black;
+    min-width: 600px;
+    min-height: 650px;
+    align-items: center;
+    justify-content: center;
+}
+.RightBorder{
+    border-right: 1.5px solid black;
+    text-align: right;
+}
+text{
+    color: F3F3F3;
+}
+input{
+    width: 22em;
+    height: 2em;
+    background-color: rgb(241, 241, 241);
+    border:none;
+    margin-left: 7px;
+    font-size: 15px;
+    padding: 10px;
+    
+
+}
+#GoogleCloudStorage{
+    text-align: right;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+button:first-child{
+    min-width: 12em;
+    min-height: 2.7em;
+    border: none;
+    background-color: #6FA8DC;
+    margin-left: 100px;
+    margin-right: 10px;
+    font-style: bold;
+    font-size: medium;
+}
+button:last-child{
+    min-width: 20em;
+    min-height: 2.7em;
+    border: none;
+    background-color: #6FA8DC;
+    margin-right: -335px;
+    font-style: bold;
+    font-size: medium;
+}
+form{
+    border: 1px solid black;
+    padding-right: 20px;
+}
+
+.error .display-error{
+    display: block;
+    margin-bottom: 20px;
+    transform: translate(-20px);
+}
+.error{
+    color: #af4242;
+    background-color: #fdeBec;
+    padding: 10px;
+    display: none;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="form" action="/" method="GET" name="myform" setInputField()>
+        <table>
+            <p class="success register-success "></p>
+        <tr>
+            <td><div class="RightBorder">Select your source :</div></td>
+            <td><div class="AllInOne" id="GoogleCloudStorage">Google Cloud Storage</div></td>
+        </tr>
+        <tr>
+            <span>Please Enter minimum 5 character</span>
+            <td><div class="RightBorder">Provide a name for pipeline:</div></td>
+            <td><input class="AllInOne" id="BORDERRight"  name="nameForPipeline" type="text" placeholder="e.g., cust_shop_energy_gateway001" ></td>    
+            <p class="error pipeline"></p>
+        </tr>
+        <tr>
+            <td><div class="RightBorder">GCS project name :</div></td>
+            <td><input class="AllInOne" id="GCSPName"  name="gcsProjectName" type="text"  placeholder="project-id" ></td>
+        </tr>
+        <tr>
+            <td><div class="RightBorder">GCS bucket name :</div></td>
+            <td><input class="AllInOne" id="GCSBName"  name="gcsBucketName" type="text"  placeholder="gs://your-bucket" ></td>
+        </tr>
+        <tr>
+            <td><div class="RightBorder">Input Cloud Storage File(s) :</div></td>
+            <td><input class="AllInOne" id="INPUTCloudStrg"  name="inputCloudStorageFile" type="text" placeholder="GCS location of your files" >
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><text style="font-size: 15px; color:lightgrey" >Example:</text> <br>
+            <text style="font-size: 15px; color:lightgrey">gs://your-bucket/your-files/01.csv</text></td>
+        </tr>
+        <tr>
+            <td><div class="RightBorder">GCS credentials :</div></td>
+            <td><input class="AllInOne" id="GCSCredential"  name="gcsCredential" type="text" style="max-width: 19em; background-color: #CCCCCC; border: none;" placeholder="gs://your-bucket" ></td>
+        </tr>
+        <tr>
+            <td><div class="RightBorder">Run Every :</div></td>
+            <td><input class="AllInOne" id="RUNEvery"  name="runEvery" type="text" placeholder="(in minutes)" >
+            
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" class="CreateBTN" onclick="setInputField(event)">Create</button>
+                <button type="submit" class="CancelBTN">Cancel</button>
+            </td>
+        </tr>
+</table>
+<p id="error"></p>
+</form>
+<script src="form.js"></script>
+</body>
+</html>
